@@ -3,9 +3,10 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
+  <!--поле для фио прописал вручную-->
   <div class="field">
     <%= f.label :fio %><br />
-    <%= f.text_field :fio, autofocus: true, autocomplete: "ФИО" %>
+    <%= f.text_field :fio %>
   </div>
 
   <div class="field">
